@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/main.js"></script>
+    <script type="module" defer src="js/main.js"></script>
 </head>
 <body>
+    <section id="next-puzzle-con" class="grid-con">
+        <div id="next-puzzle" class="col-start-3 col-span-2 m-col-start-11 m-col-span-2">
+            <p id="next-puzzle-text">Next Puzzle ►</p>
+        </div>
+    </section>
+
     <section id="board-con" class="grid-con">
         <h1 class="hidden">The Board</h1>
         <div id="board-pieces" class="col-span-full">
@@ -71,6 +77,10 @@
             <div id="piece-56" class="board-piece"></div>
             <div id="piece-57" class="board-piece"></div>
             <div id="piece-58" class="board-piece"></div>
+        </div>
+
+        <div id="category-con" class="col-span-full">
+            <p id="category-content"></p>
         </div>
     </section>
 
