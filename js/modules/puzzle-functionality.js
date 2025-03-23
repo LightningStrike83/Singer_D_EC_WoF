@@ -34,11 +34,26 @@ export function puzzleFunctionality() {
             value++;
 
             categoryText.textContent = puzzles[puzzle].category
+
+            checkPunctuation()
         });
     }
 
     function disappearBox() {
         this.style.display = "none"
+    }
+
+    function checkPunctuation() {
+        const activeLetter = document.querySelectorAll(".active-letter")
+
+        activeLetter.forEach(letter => {
+            const parentNode = letter.parentNode
+            let div = parentNode.querySelector("div")
+
+            if (letter.textContent === "'" || letter.textContent === "!" || letter.textContent === "," || letter.textContent === "?" || letter.textContent === "&") {
+                div.style.display = "none"
+            }
+        })
     }
 
     puzzlePopulation();
