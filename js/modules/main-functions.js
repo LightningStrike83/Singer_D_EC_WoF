@@ -2,6 +2,7 @@ export function functionality() {
     const arrowCon = document.querySelector("#arrow")
     const nameSubmit = document.querySelectorAll(".name-submit")
     const moneySubmit = document.querySelectorAll(".money-submit")
+    const roundSubmit = document.querySelectorAll(".round-submit")
 
     function expandWheelCon() {
         const wheelCon = document.querySelector("#wheel-con")
@@ -47,7 +48,24 @@ export function functionality() {
         moneyValueCheck.value = ""
     }
 
+    function changeRoundAmount() {
+        const parentCheck = this.parentNode 
+        const roundValueCheck = parentCheck.querySelector(".round-value")
+        const roundValue = roundValueCheck.value
+        const dataCheck = parentCheck.dataset.player
+        const roundTextCheck = document.querySelector(`#player-${dataCheck}`)
+        const roundSelect = roundTextCheck.querySelector(".round-amount")
+        const round = roundSelect.textContent
+        const newValue = parseFloat(roundValue)
+        const oldValue = parseFloat(round)
+        const newAmount = newValue + oldValue
+
+        roundSelect.textContent = newAmount
+        roundValueCheck.value = ""
+    }
+
     arrowCon.addEventListener("click", expandWheelCon)
     nameSubmit.forEach(button => button.addEventListener("click", nameChange))
     moneySubmit.forEach(button => button.addEventListener("click", changeMoney))
+    roundSubmit.forEach(button => button.addEventListener("click", changeRoundAmount))
 }
