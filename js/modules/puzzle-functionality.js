@@ -37,6 +37,8 @@ export function puzzleFunctionality() {
 
             checkPunctuation()
         });
+
+        document.body.style.backgroundImage= `url('../images/bgs/${puzzles[puzzle].background}')`
     }
 
     function disappearBox() {

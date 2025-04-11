@@ -1,6 +1,7 @@
 export function puzzleCreation() {
     const puzzles = [
         {
+            background: "magvel.webp",
             category: "Meme",
             piece1: "",
             piece2: "",
@@ -63,6 +64,7 @@ export function puzzleCreation() {
         }, 
 
         {
+            background: "HeeHaw_Mart.webp",
             category: "Character",
             piece1: "",
             piece2: "",
@@ -125,6 +127,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "Opera.webp",
             category: "Song",
             piece1: "",
             piece2: "",
@@ -187,6 +190,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "Plegia.webp",
             category: "Song",
             piece1: "",
             piece2: "",
@@ -249,6 +253,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "Brodia.webp",
             category: "Quote",
             piece1: "",
             piece2: "",
@@ -311,6 +316,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "SF.webp",
             category: "Quote",
             piece1: "",
             piece2: "L",
@@ -373,6 +379,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "Chalphy.webp",
             category: "Character",
             piece1: "",
             piece2: "",
@@ -435,6 +442,7 @@ export function puzzleCreation() {
         },
 
         {
+            background: "bridal.jpg",
             category: "Before & After Heroes",
             piece1: "",
             piece2: "",
